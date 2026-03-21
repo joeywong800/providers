@@ -1,3 +1,4 @@
+import { flags } from '@/entrypoint/utils/targets';
 import { EmbedOutput, makeEmbed } from '@/providers/base';
 import { NotFoundError } from '@/utils/errors';
 
@@ -23,6 +24,7 @@ export const AnimekaiScraper = makeEmbed({
   id: 'animekai-embed',
   name: 'AnimeKai',
   rank: 415,
+  flags: [],
   async scrape(ctx): Promise<EmbedOutput> {
     const { episodeId } = JSON.parse(ctx.url);
     const data = await ctx.fetcher<StreamData>(
