@@ -67,6 +67,8 @@ import {
 } from './embeds/vidsrcsu';
 import { viperScraper } from './embeds/viper';
 import { voeScraper } from './embeds/voe';
+import { vidkingEmbedScraper } from './embeds/vidking';
+import { vidkingScraper } from './sources/vidking';
 import { warezcdnembedHlsScraper } from './embeds/warezcdn/hls';
 import { warezcdnembedMp4Scraper } from './embeds/warezcdn/mp4';
 import { warezPlayerScraper } from './embeds/warezcdn/warezplayer';
@@ -150,6 +152,7 @@ export function gatherAllSources(): Array<Sourcerer> {
     fullhdfilmizleScraper,
     vidlinkScraper,
     vidrockScraper,
+    vidkingScraper,
     watchanimeworldScraper,
   ];
 }
@@ -217,6 +220,7 @@ export function gatherAllEmbeds(): Array<Embed> {
     droploadScraper,
     supervideoScraper,
     voeScraper,
+    vidkingEmbedScraper,
     AnimekaiScraper,
   ];
 }
