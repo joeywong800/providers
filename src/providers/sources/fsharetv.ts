@@ -76,9 +76,9 @@ async function comboScraper(ctx: ShowScrapeContext | MovieScrapeContext): Promis
       {
         id: 'primary',
         type: 'file',
-        flags: [],
+        flags: [flags.CORS_ALLOWED],
         headers: {
-          referer: 'https://fsharetv.co',
+          referer: 'https://fsharetv.cc',
         },
         qualities,
         captions: [],
@@ -91,6 +91,6 @@ export const fsharetvScraper = makeSourcerer({
   id: 'fsharetv',
   name: 'FshareTV',
   rank: 201,
-  flags: [],
+  flags: [flags.CORS_ALLOWED],
   scrapeMovie: comboScraper,
 });
