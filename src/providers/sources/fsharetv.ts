@@ -68,6 +68,12 @@ async function comboScraper(ctx: ShowScrapeContext | MovieScrapeContext): Promis
     },
     {} as FileBasedStream['qualities'],
   );
+
+  // const flags = stream.flags || [];
+  // if (vidlinkData.flags) {
+  //   flags.push(...vidlinkData.flags);
+  // }
+  
   ctx.progress(90);
 
   return {
@@ -92,6 +98,6 @@ export const fsharetvScraper = makeSourcerer({
   name: 'FshareTV',
   rank: 201,
   disabled: false,
-  flags: [flags.CORS_ALLOWED],
+  flags: [],
   scrapeMovie: comboScraper,
 });
