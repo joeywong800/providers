@@ -138,7 +138,7 @@ export function gatherAllSources(): Array<Sourcerer> {
     FedAPIDBScraper,
     pirxcyScraper,
     vidsrcvipScraper,
-    vixsrcScraper,
+    vixSrcScraper,
     rgshowsScraper,
     vidifyScraper,
     zunimeScraper,
