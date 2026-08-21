@@ -33,7 +33,7 @@
   "bugs": {
     "url": "https://github.com/joeywong800/providers/issues"
   },
-  "homepage": "https://joeywong800.github.io/providers/",
+  "homepage": "https://thingfoil.github.io/providers/",
   "scripts": {
     "build": "vite build",
     "cli": "vite-node ./src/dev-cli/index.ts",
