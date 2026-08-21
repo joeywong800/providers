@@ -7,7 +7,7 @@ import { MovieScrapeContext, ShowScrapeContext } from '@/utils/context';
 import { NotFoundError } from '@/utils/errors';
 import { getValidQualityFromString } from '@/utils/quality';
 
-const baseUrl = 'https://fsharetv.co';
+const baseUrl = 'https://fsharetv.cc';
 
 async function comboScraper(ctx: ShowScrapeContext | MovieScrapeContext): Promise<SourcererOutput> {
   const searchPage = await ctx.proxiedFetcher('/search', {
@@ -76,7 +76,7 @@ async function comboScraper(ctx: ShowScrapeContext | MovieScrapeContext): Promis
       {
         id: 'primary',
         type: 'file',
-        flags: [flags.CORS_ALLOWED],
+        flags: [],
         headers: {
           referer: 'https://fsharetv.cc',
         },
@@ -91,6 +91,7 @@ export const fsharetvScraper = makeSourcerer({
   id: 'fsharetv',
   name: 'FshareTV',
   rank: 201,
+  disabled: false,
   flags: [flags.CORS_ALLOWED],
   scrapeMovie: comboScraper,
 });
