@@ -20,7 +20,7 @@ import { mp4hydraScraper } from '@/providers/sources/mp4hydra';
 import { pirxcyScraper } from '@/providers/sources/pirxcy';
 import { tugaflixScraper } from '@/providers/sources/tugaflix';
 import { vidsrcvipScraper } from '@/providers/sources/vidsrcvip';
-import { vixsrcScraper } from '@/providers/sources/vixsrc';
+import { vixSrcScraper } from '@/providers/sources/vixsrc';
 import { zoechipScraper } from '@/providers/sources/zoechip';
 
 import { AnimetsuEmbeds } from './embeds/animetsu';
