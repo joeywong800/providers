@@ -13,12 +13,14 @@ import { autoembedScraper } from '@/providers/sources/autoembed';
 import { dopeboxEmbeds, dopeboxScraper } from '@/providers/sources/dopebox/index';
 import { ee3Scraper } from '@/providers/sources/ee3';
 import { fsharetvScraper } from '@/providers/sources/fsharetv';
+import { hardpastaScraper } from '@/providers/sources/hardpasta';
 import { fsOnlineEmbeds, fsOnlineScraper } from '@/providers/sources/fsonline/index';
 import { insertunitScraper } from '@/providers/sources/insertunit';
 import { mp4hydraScraper } from '@/providers/sources/mp4hydra';
 import { pirxcyScraper } from '@/providers/sources/pirxcy';
 import { tugaflixScraper } from '@/providers/sources/tugaflix';
 import { vidsrcvipScraper } from '@/providers/sources/vidsrcvip';
+import { vixsrcScraper } from '@/providers/sources/vixsrc';
 import { zoechipScraper } from '@/providers/sources/zoechip';
 
 import { AnimetsuEmbeds } from './embeds/animetsu';
@@ -119,6 +121,7 @@ export function gatherAllSources(): Array<Sourcerer> {
     tugaflixScraper,
     ee3Scraper,
     fsharetvScraper,
+    hardpastaScraper,
     zoechipScraper,
     mp4hydraScraper,
     embedsuScraper,
@@ -135,6 +138,7 @@ export function gatherAllSources(): Array<Sourcerer> {
     FedAPIDBScraper,
     pirxcyScraper,
     vidsrcvipScraper,
+    vixsrcScraper,
     rgshowsScraper,
     vidifyScraper,
     zunimeScraper,
