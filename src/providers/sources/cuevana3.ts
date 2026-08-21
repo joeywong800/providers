@@ -197,8 +197,8 @@ export const cuevana3Scraper = makeSourcerer({
   id: 'cuevana3',
   name: 'Cuevana3',
   rank: 80,
-  disabled: false,
-  flags: [flags.CORS_ALLOWED],
+  disabled: true,
+  flags: [],
   scrapeMovie: comboScraper,
   scrapeShow: comboScraper,
 });
