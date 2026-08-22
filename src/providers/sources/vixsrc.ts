@@ -17,7 +17,7 @@ const universalScraper = async (ctx: MovieScrapeContext | ShowScrapeContext): Pr
     apiPath = `api/tv/${ctx.media.tmdbId}/${ctx.media.season.number}/${ctx.media.episode.number}`;
   }
 
-  const providerLang = 'en';
+  const providerLang = 'it';
   apiPath += `?lang=${providerLang}`;
 
   const headers = {
@@ -32,6 +32,7 @@ const universalScraper = async (ctx: MovieScrapeContext | ShowScrapeContext): Pr
         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
       'X-Requested-With': 'XMLHttpRequest',
       Referer: baseUrl,
+      Origin: baseUrl,
     },
   });
 
